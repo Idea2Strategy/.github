@@ -1,0 +1,86 @@
+name: 🐛 버그 신고
+description: 정상적으로 동작하지 않는 기능이나 오류를 신고합니다.
+title: "[Bug] "
+labels:
+  - bug
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 버그 설명
+      description: 발생한 문제를 명확하게 설명해 주세요.
+      placeholder: "예: 로그인 버튼을 클릭해도 페이지가 이동하지 않습니다."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 재현 방법
+      description: 문제를 재현할 수 있는 단계를 순서대로 작성해 주세요.
+      placeholder: |
+        1. 로그인 페이지로 이동합니다.
+        2. 아이디와 비밀번호를 입력합니다.
+        3. 로그인 버튼을 클릭합니다.
+        4. 오류가 발생합니다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 기대한 결과
+      description: 정상적으로 어떻게 동작해야 하는지 작성해 주세요.
+      placeholder: "예: 로그인 성공 후 메인 페이지로 이동해야 합니다."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 실제 결과
+      description: 실제로 발생한 현상이나 오류 메시지를 작성해 주세요.
+      placeholder: "예: 아무 반응이 없으며 콘솔에 500 오류가 표시됩니다."
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: 실행 환경
+      description: 문제가 발생한 OS, 브라우저, 앱 또는 소프트웨어 버전을 작성해 주세요.
+      placeholder: "예: Windows 11, Chrome 140, v1.2.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 로그
+      description: 관련 로그나 오류 메시지가 있다면 첨부해 주세요.
+      render: shell
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 스크린샷 및 첨부 자료
+      description: 문제를 이해하는 데 도움이 되는 이미지나 영상을 첨부해 주세요.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 추가 정보
+      description: 원인으로 추정되는 내용이나 참고할 정보가 있다면 작성해 주세요.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 확인 사항
+      options:
+        - label: 동일한 버그가 이미 등록되어 있는지 검색했습니다.
+          required: true
+        - label: 최신 버전에서도 문제가 발생하는지 확인했습니다.
+          required: true
+        - label: 민감한 개인정보나 인증 정보를 포함하지 않았습니다.
+          required: true

@@ -1,0 +1,42 @@
+name: ✅ 테스트
+description: 테스트를 추가하거나 기존 테스트를 개선합니다.
+title: "[Test] "
+labels:
+  - test
+body:
+  - type: dropdown
+    id: test-type
+    attributes:
+      label: 테스트 종류
+      options:
+        - 단위 테스트
+        - 통합 테스트
+        - E2E 테스트
+        - 성능 테스트
+        - 테스트 환경 개선
+    validations:
+      required: true
+
+  - type: textarea
+    id: target
+    attributes:
+      label: 테스트 대상
+      description: 테스트할 기능이나 모듈을 작성해 주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scenarios
+    attributes:
+      label: 테스트 시나리오
+      placeholder: |
+        - 정상 입력 시 성공
+        - 필수 값 누락 시 실패
+        - 중복 요청 시 적절한 오류 반환
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: 추가 또는 개선 이유

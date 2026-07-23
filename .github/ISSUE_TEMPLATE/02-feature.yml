@@ -1,0 +1,83 @@
+name: ✨ 기능 요청
+description: 새로운 기능이나 기존 기능의 개선 사항을 제안합니다.
+title: "[Feature] "
+labels:
+  - enhancement
+
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 해결하려는 문제
+      description: 이 기능이 필요한 이유와 현재 겪고 있는 문제를 설명해 주세요.
+      placeholder: "예: 사용자가 매번 동일한 검색 조건을 다시 입력해야 합니다."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 제안하는 기능
+      description: 원하는 기능이 어떻게 동작해야 하는지 구체적으로 작성해 주세요.
+      placeholder: "예: 검색 조건을 저장하고 목록에서 다시 불러올 수 있으면 좋겠습니다."
+    validations:
+      required: true
+
+  - type: textarea
+    id: scenarios
+    attributes:
+      label: 사용 시나리오
+      description: 누가 어떤 상황에서 이 기능을 사용하는지 작성해 주세요.
+      placeholder: |
+        1. 사용자가 검색 조건을 입력합니다.
+        2. '검색 조건 저장' 버튼을 클릭합니다.
+        3. 저장된 조건을 다음 방문에서 다시 선택합니다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 고려한 대안
+      description: 현재 사용 중인 해결 방법이나 검토한 다른 방법이 있다면 작성해 주세요.
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 기대 효과
+      description: 기능이 추가되었을 때 어떤 점이 개선되는지 작성해 주세요.
+      placeholder: "예: 반복 입력이 줄어들어 검색 과정이 간단해집니다."
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: 작업 범위
+      description: 필요하다고 생각하는 세부 작업을 작성해 주세요.
+      placeholder: |
+        - 검색 조건 저장 API 추가
+        - 저장된 검색 조건 목록 UI 추가
+        - 검색 조건 삭제 기능 추가
+
+  - type: textarea
+    id: references
+    attributes:
+      label: 참고 자료
+      description: 디자인, 문서, 관련 이슈 또는 참고할 서비스의 링크를 첨부해 주세요.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 추가 정보
+      description: 그 밖에 제안과 관련된 내용을 작성해 주세요.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 확인 사항
+      options:
+        - label: 동일하거나 유사한 기능 요청이 있는지 검색했습니다.
+          required: true
+        - label: 제안하는 기능의 목적과 사용 사례를 작성했습니다.
+          required: true
