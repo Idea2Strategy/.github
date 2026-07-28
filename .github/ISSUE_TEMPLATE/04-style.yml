@@ -1,0 +1,73 @@
+name: 🎨 스타일 개선
+description: 기능 변경 없이 UI, 레이아웃, 디자인 또는 시각적 표현의 개선을 제안합니다.
+title: "[Style] "
+labels:
+  - style
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        기능의 동작은 변경하지 않고 시각적인 부분을 개선하기 위한 이슈입니다.
+
+  - type: textarea
+    id: target
+    attributes:
+      label: 개선 대상
+      description: 스타일을 개선할 화면, 페이지 또는 컴포넌트를 작성해 주세요.
+      placeholder: "예: 로그인 페이지의 로그인 폼"
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: 현재 상태
+      description: 현재 디자인에서 불편하거나 개선이 필요한 부분을 설명해 주세요.
+      placeholder: "예: 입력 필드 사이의 간격이 좁고 버튼의 강조가 부족합니다."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 개선 내용
+      description: 어떤 모습으로 개선하면 좋을지 구체적으로 작성해 주세요.
+      placeholder: "예: 입력 필드 간격을 늘리고 주요 버튼의 색상과 크기를 조정합니다."
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: 작업 범위
+      description: 변경이 필요한 화면, 컴포넌트 또는 스타일 요소를 작성해 주세요.
+      placeholder: |
+        - 로그인 폼 간격 조정
+        - 로그인 버튼 스타일 변경
+        - 모바일 화면 여백 수정
+
+  - type: textarea
+    id: references
+    attributes:
+      label: 참고 자료
+      description: 현재 화면의 스크린샷, 디자인 시안, 관련 링크 등을 첨부해 주세요.
+      placeholder: "이미지를 이 영역에 끌어다 놓거나 참고 링크를 작성해 주세요."
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 추가 정보
+      description: 반응형, 접근성 또는 디자인 시스템과 관련된 내용을 작성해 주세요.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 확인 사항
+      options:
+        - label: 기능이나 비즈니스 로직의 변경이 없는 작업입니다.
+          required: true
+        - label: 동일하거나 유사한 스타일 개선 이슈가 있는지 검색했습니다.
+          required: true
+        - label: 개선 대상과 원하는 변경 내용을 구체적으로 작성했습니다.
+          required: true
