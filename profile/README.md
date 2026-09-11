@@ -64,3 +64,15 @@ Team B205는 프로젝트 관리, 프론트엔드, 백엔드, 인프라와 데�
 ## 우리가 만들고자 하는 것
 
 Idea2Strategy는 수익을 보장하는 서비스가 아니라, 사용자가 자신의 투자 규칙을 직접 만들고 객관적인 데이터로 제대로 시험할 수 있는 환경을 지향합니다. 전략의 결과뿐 아니라 그 결과가 만들어진 과정까지 확인할 수 있도록 하여, 아이디어가 검증 가능한 전략으로 발전하는 과정을 돕습니다.
+
+## 저장소
+
+| 저장소 | 주요 역할 |
+| --- | --- |
+| [root](https://github.com/Idea2Strategy/Idea2Strategy) | 프로젝트 소개, 제품 정의·계약, 인프라와 서비스 통합 |
+| [ui](https://github.com/Idea2Strategy/Idea2Strategy-ui) | 전략 편집기, 봇·백테스트·대회 대시보드 |
+| [backend](https://github.com/Idea2Strategy/Idea2Strategy-backend) | 계정·인증, 전략·봇 관리, 대회·성과 조회 API |
+| [trading-engine](https://github.com/Idea2Strategy/Idea2Strategy-trading-engine) | 실시간 전략 평가, 가상 주문·체결, 포지션·원장 처리 |
+| [backtest-engine](https://github.com/Idea2Strategy/Idea2Strategy-backtest-engine) | 과거 데이터 기반 백테스트 실행과 결과 분석 |
+| [data-pipeline](https://github.com/Idea2Strategy/Idea2Strategy-data-pipeline) | 시장 데이터 수집·검증·가공과 데이터셋 관리 |
+| [market_hist_script](https://github.com/Idea2Strategy/market_hist_script) | 과거 시세 수집과 백테스트용 데이터셋 가공 스크립트 |
